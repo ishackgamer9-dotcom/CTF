@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b12">
+<title>Capsule Corporation // Goku's Final Message</title>
+<style>
+:root{--bg:#090b12;--panel:#111623;--line:#31506d;--blue:#79c4ff;--cyan:#8df5f0;--text:#e9f2ff;--muted:#9baac1;--gold:#ffcf70}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(ellipse at 15% 0%,#1b3b59 0,transparent 38%),radial-gradient(ellipse at 100% 40%,#2b173b 0,transparent 35%),var(--bg);font:16px/1.75 system-ui,-apple-system,Segoe UI,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:linear-gradient(#79c4ff18 1px,transparent 1px),linear-gradient(90deg,#79c4ff18 1px,transparent 1px);background-size:42px 42px}
+.wrap{width:min(1040px,calc(100% - 32px));margin:auto;position:relative}header{padding:25px 0;border-bottom:1px solid var(--line)}.top{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font: .75rem ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#7cffad;margin-right:8px;box-shadow:0 0 12px #7cffad}
+.hero{padding:clamp(40px,8vw,84px) 0 42px}.eyebrow{color:var(--blue);letter-spacing:.2em;font-size:.76rem;font-weight:700;text-transform:uppercase}h1{font-size:clamp(2.4rem,7vw,5.2rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0}h1 span{color:var(--blue)}.lead{color:#c4d2e6;max-width:760px;font-size:1.15rem}.pills{display:flex;gap:9px;flex-wrap:wrap;margin:24px 0}.pill{border:1px solid var(--line);border-radius:99px;padding:5px 11px;color:#cbd9eb;font: .76rem ui-monospace,monospace;background:#111623aa}.alert{border-left:3px solid var(--gold);padding:15px 18px;background:#ffcf7010;color:#e7d9b8;max-width:850px}
+.grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.8fr);gap:22px;padding-bottom:64px;align-items:start}.panel{background:#111623eF;border:1px solid var(--line);border-radius:17px;padding:clamp(20px,4vw,32px);box-shadow:0 18px 70px #0004}h2{font-size:1.28rem;line-height:1.3;margin:0 0 14px}h3{color:var(--blue);font-size:.83rem;text-transform:uppercase;letter-spacing:.14em;margin:28px 0 8px}p{margin:0 0 15px}.muted{color:var(--muted)}.quote{font-family:Georgia,serif;font-size:1.1rem;font-style:italic;color:#f2e8d0;border-left:2px solid var(--gold);padding:3px 0 3px 18px;margin:22px 0}.side{position:sticky;top:18px}.signal{border:1px dashed #8df5f066;border-radius:12px;padding:16px;background:#8df5f009;margin:16px 0}.signal strong{display:block;color:var(--cyan);font: .74rem ui-monospace,monospace;letter-spacing:.12em;margin-bottom:8px}.button{border:1px solid var(--blue);background:#79c4ff15;color:var(--text);border-radius:9px;padding:10px 14px;font-weight:700;cursor:pointer}.button:hover{background:#79c4ff2b}.hint{display:none;border-top:1px solid var(--line);padding-top:12px;margin-top:12px;color:#d7e5f7}.hint.show{display:block}.steps{list-style:none;padding:0;counter-reset:step}.steps li{counter-increment:step;display:grid;grid-template-columns:32px 1fr;gap:10px;margin:17px 0;color:#c7d4e7}.steps li:before{content:counter(step,decimal-leading-zero);color:var(--cyan);font: .8rem ui-monospace,monospace;padding-top:4px}.stamp{color:#ff777e;border:1px solid #ff777e88;display:inline-block;padding:4px 8px;transform:rotate(-2deg);font: .7rem ui-monospace,monospace;letter-spacing:.1em}
+.submit-panel{margin:0 0 64px;background:#111623ee;border:1px solid #4b7294;border-radius:17px;padding:clamp(20px,4vw,32px);box-shadow:0 18px 70px #0004}
+.submit-row{display:flex;gap:10px;margin-top:16px}
+.submit-row input{flex:1;min-width:0;background:#080d16;border:1px solid #31506d;border-radius:9px;padding:12px 14px;color:#e9f2ff;font:inherit}
+.submit-row input:focus{outline:2px solid #79c4ff;outline-offset:2px}
+.submit-result{margin-top:12px;min-height:1.5em;color:#9baac1}
+.submit-result.error{color:#ff999f}.submit-result.ok{color:#8df5f0}
+@media(max-width:560px){.submit-row{flex-direction:column}.submit-row .button{width:100%}}
+
+footer{border-top:1px solid var(--line);padding:22px 0 34px;color:var(--muted);font: .74rem/1.7 ui-monospace,monospace}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.side{position:static}}
+</style></head>
+<body>
+<header><div class="wrap top"><div><span class="dot"></span>Capsule Corporation // Recovery Division</div><div>Archive node 07 · Earth incident</div></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">Emergency transmission · Classification: restricted</div>
+<h1>Goku's <span>Final Message</span></h1>
+<p class="lead">Beerus showed no mercy. Earth's defenders have fallen silent. A damaged note recovered by Capsule Corporation's bots may be the only lead to the power that can challenge a God of Destruction.</p>
+<div class="pills"><span class="pill">CATEGORY: OSINT</span><span class="pill">DIFFICULTY: EASY / MEDIUM</span><span class="pill">CASE: EARTH-7</span><span class="pill">STATUS: UNRESOLVED</span></div>
+<div class="alert"><strong>RECOVERY NOTICE:</strong> Eleven characters survived in the damaged note. They are believed to point toward a transmission Goku deliberately left behind. Follow the evidence; do not assume the first record is the last.</div>
+</section>
+<section class="grid">
+<article class="panel">
+<h2>Incident report: The fall of Earth</h2>
+<p>The universe has witnessed the rise and fall of countless civilizations. Empires have crumbled, entire worlds have vanished, and legends have faded into the silence of space. Yet nothing could have prepared Earth for the arrival of Beerus, the God of Destruction.</p>
+<p>In another telling of this story, Beerus found amusement in the customs of mortals and eventually departed without destroying the planet. But this is not that story.</p>
+<p><strong>This time, there was no mercy.</strong></p>
+<p>The skies trembled as Beerus descended upon Earth. The Z-Fighters gathered to protect their home, knowing that the fate of every living soul rested upon a battle they might not survive. At the center stood Son Goku: a warrior who had faced tyrants, monsters, and enemies whose strength once seemed impossible to overcome.</p>
+<p>Goku attacked with everything he possessed, but the God of Destruction answered with terrifying ease. The difference between them was not merely a gap in strength. It was the distance between a mortal warrior and a being who held the power to erase entire worlds.</p>
+<p>Still, Goku refused to surrender. He thought of his family, his friends, and the people who trusted him to protect their home. He had never fought because he believed he could not lose. He fought because some things were worth protecting even when victory seemed impossible.</p>
+<p>The final clash illuminated the heavens. Energy tore through the atmosphere, the earth shook beneath their feet, and the shockwaves echoed across the planet. Goku gave everything: every ounce of strength, every remaining breath, every fragment of determination that had carried him through a lifetime of battles.</p>
+<p>But Beerus remained standing.</p>
+<p>The defender of Earth had fallen, and the God of Destruction showed no mercy. Silence descended upon the battlefield. Earth's greatest warrior had lost, and the being responsible possessed the power to erase everything that remained.</p>
+<h3>A clue survived</h3>
+<p>During his final moments, Goku attempted to preserve something beyond his own survival. It was not a weapon or a technique that could be learned through ordinary training. It was a clue, a fragment of information connected to an ancient Saiyan legend.</p>
+<p>Capsule Corporation's recovery bots eventually discovered a damaged note attributed to Goku. Most of it was lost, but eleven characters survived. The scientists believe the characters are not the message itself, but a path leading to a surviving record that may reveal the identity of the one warrior capable of challenging Beerus.</p>
+<blockquote class="quote">“With his final breath, Goku left us something that may yet lead to the end of Beerus. Find the transmission, follow the surviving connections, and uncover the power that could save our world.”</blockquote>
+<p>Goku's final note consisted of : lOyknMfZCBk</p>
+<p>The trail may pass through forgotten records, scattered digital archives, and connections that seem meaningless until examined in the proper context. A seemingly insignificant clue may be the only remaining link to the truth.</p>
+<p>Do not assume that the first record you discover is the last one. Do not mistake the fall of a warrior for the destruction of the knowledge he leaves behind.</p>
+<p>Goku may have fallen, but his final message has not yet been understood. Follow the evidence, reconstruct the trail, and discover the power that may yet turn Earth's defeat into a second chance.</p>
+<h3>Your mission</h3><p>Investigate the recovered clue, trace the surviving digital connections, and discover the identity of the warrior who may be Earth's last hope against Beerus.</p>
+<p><strong>Flag format:</strong> <code>flag{...}</code></p>
+</article>
+<aside class="panel side">
+<div class="stamp">UNRESOLVED CASE</div><h2 style="margin-top:18px">Recovered evidence</h2><p class="muted">Capsule Corporation Automated Recovery System</p>
+<div class="signal"><strong>RECOVERED NOTE</strong><span class="muted" style="font-family:ui-monospace,monospace;letter-spacing:.1em">11 CHARACTERS PRESERVED</span><p style="margin:10px 0 0">The fragment is believed to lead to a final transmission.</p></div>
+<h3>Investigation protocol</h3><ol class="steps"><li>Locate the transmission referenced by the recovered fragment.</li><li>Examine the available evidence and follow credible public connections.</li><li>Recover the message left behind and identify the answer.</li></ol>
+<button class="button" id="hintButton" type="button">Reveal first hint</button><div class="hint" id="hintText">The eleven characters are a YouTube video ID. Use them to locate the unlisted transmission.</div>
+<p style="margin-top:20px"><span class="muted">ARCHIVE STATUS:</span><br><strong>Awaiting investigator</strong></p>
+</aside></section>
+<section class="submit-panel" id="submit">
+  <div class="eyebrow">Final checkpoint</div>
+  <h2 style="margin-top:10px">Submit your answer</h2>
+  <p class="muted">Found the message Goku left behind? Enter the flag you recovered from the evidence trail.</p>
+  <form id="flagForm">
+    <label for="flagInput" class="muted">Flag</label>
+    <div class="submit-row">
+      <input id="flagInput" name="flag" type="text" placeholder="flag{...}" autocomplete="off" spellcheck="false" required>
+      <button class="button" type="submit">Submit flag ↗</button>
+    </div>
+  </form>
+  <div id="submitResult" class="submit-result" role="status" aria-live="polite"></div>
+  <p class="muted" style="font-size:.82rem;margin-top:10px">Note: this is a static website demo. For a real CTF, connect this form to your CTF platform's scoreboard/API so the flag is validated securely.</p>
+</section>
+
+</main>
+<footer><div class="wrap">CAPSULE CORPORATION · RECOVERY DIVISION<br>EARTH-7 INCIDENT ARCHIVE · FICTIONAL CTF SCENARIO</div></footer>
+<script>
+const b=document.getElementById('hintButton'),h=document.getElementById('hintText');
+b.addEventListener('click',()=>{const s=h.classList.toggle('show');b.textContent=s?'Hide first hint':'Reveal first hint'});
+const flagForm=document.getElementById('flagForm');
+const flagInput=document.getElementById('flagInput');
+const submitResult=document.getElementById('submitResult');
+flagForm.addEventListener('submit',(event)=>{
+  event.preventDefault();
+  const value=flagInput.value.trim();
+  if(!/^flag\\{[^{}]+\\}$/.test(value)){
+    submitResult.className='submit-result error';
+    submitResult.textContent='Invalid format. Submit your answer in flag{...} format.';
+    return;
+  }
+  submitResult.className='submit-result';
+  submitResult.textContent='Flag captured in this page, but no scoreboard is connected yet. Submit it on your CTF platform, or connect this form to your platform endpoint.';
+});
+</script>
+</body></html>
